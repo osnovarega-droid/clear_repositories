@@ -1,43 +1,28 @@
-@@ -45,25 +45,42 @@ python main.py
-## ⚙ Account Setup
+# SteamRouteTool
+A tool for blocking routes in Steam games that use network_config.json
 
-1. To add accounts, place your `maFiles` (optional) in the `mafiles` folder.
-2. Add logins and passwords in the `logpass.txt` file in the format:
+Note: This will automatically clear any CSGORoutingTool firewall rules upon launch (to save the need to clear those rules in that application).
 
-```
-login:password
-```
+## Supports:
+Blocking specific routes for games that use Valve's network_config.json (e.g. Counter-Strike: Global Offensive & Dota 2).
 
----
+## How to use
+* Click the checkbox of the route(s) you'd like to block.
+* Click the route name to reveal additional routes at that location (if available).
+* Click "Blocked" to toggle all checkboxes.
+* Click a ping value to re-ping that specific route.
+* Clear Rules will clear all firewall rules.
+* Ping Routes will ping all routes and update their values.
 
-## 🖼 Example Screenshot
+## Images
+![Main](https://dev.froody.tech/SteamRouteTool/img/Main.png)
 
-<img width="1642" height="909" alt="image" src="https://github.com/user-attachments/assets/48aadeae-7365-44fb-9824-a69dc730a6da" />
+## Credits
+#### Froody
+Tool creation.
+#### Newtonsoft
+Newtonsoft.Json package, licensed under MIT. https://github.com/JamesNK/Newtonsoft.Json/
+#### Icon
+https://github.com/feathericons/feather#feather
 
-
----
-
-## 🚀 Usage
-
-* The panel allows launching multiple CS2 accounts simultaneously.
-* Automatically arranges windows and collects lobbies.
-* Works with accounts listed in `logpass.txt` and `maFiles`.
-
-pip install opencv-python pillow pyautogui numpy psutil pywin32 requests
-
-
-## 📦 Looter (Send trade)
-
-Добавлены кнопки `Send trade` и `Settings looter` в блоке **Config** (под `Disable Steam Overlay`).
-
-1. Нажмите `Settings looter` и укажите вашу Steam trade-ссылку.
-2. Выделите аккаунты в списке.
-3. Нажмите `Send trade` — для каждого выбранного аккаунта будет запущен `looter_core.js`.
-
-### Требования для looter
-
-```bash
-npm install
-```
-
-Секреты `shared_secret` и `identity_secret` берутся из ваших `.mafile` файлов в папке `mafiles`.
+Contact me on Discord for faster help: Froody#5824
